@@ -19,7 +19,7 @@ function Top() {
           Tshiteej Bhardwaj
         </Heading>
         <Text mt={8} width={["70vw", "30vw", "50vw"]}>
-          I am a Bengaluru based Software Engineer who loves to build things on
+          I am a Backend Engineer based out of India who loves to build things on
           the Internet, Real Life, and everything in between.
         </Text>
         <Text mt={2}>I also love to discuss tech, comics and anime.</Text>

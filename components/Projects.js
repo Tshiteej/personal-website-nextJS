@@ -58,7 +58,7 @@ function Projects() {
             boxShadow='dark-xl'
           >
             <Box pt='2' pl='3' pb='3' justify='right'>
-              As a attempt to learn NextJS and Chakra-UI, I came up with this
+              As an attempt to learn NextJS and Chakra-UI, I came up with this
               site.
             </Box>
           </MBox>

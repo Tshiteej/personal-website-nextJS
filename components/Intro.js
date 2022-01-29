@@ -24,7 +24,7 @@ function Intro() {
         started my journey with C++ by building small banking systems as a
         hobby. Today, I build things for the web , mostly using JavaScript.{" "}
         <br />
-        Currently I am working as a Senior Software Engineer at YellowMessenger.
+        Currently I am working as a Backend Engineer at ElevateHQ.
         <br />
         <List spacing={5} mt={5}>
           <Text>Most of my weapons in the arsenal includes:</Text>
@@ -39,10 +39,6 @@ function Intro() {
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color='teal.600' />
-              React
-            </ListItem>
-            <ListItem>
-              <ListIcon as={FaCheckCircle} color='teal.600' />
               MongoDB
             </ListItem>
             <ListItem>
@@ -51,7 +47,7 @@ function Intro() {
             </ListItem>
             <ListItem>
               <ListIcon as={FaCheckCircle} color='teal.600' />
-              MySQL
+              PostgreSQL
             </ListItem>
           </Stack>
         </List>
