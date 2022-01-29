@@ -1,0 +1,147 @@
+---
+title: "How regex in python isn’t as bad as you think?"
+publishedDate: "2020-04-15"
+summary: "Ever thought of solving a problem with regex and ended up with 2 problems. No more!"
+author: "Tshiteej Bhardwaj"
+tags: Regex, Python, Automation
+---
+
+## What is RegEx?
+
+A Regular Expression or RegEx, in short, is a pattern describing a set of characters. It is widely used to check if a string contains a set of characters matching a certain pattern.
+
+**Engines:**
+
+When I say Engines, it does not refer to a complex system or anything of that fashion.
+Engines are a piece of software / well-written code that tests a string for a particular pattern match. Usually, it is a part of a larger application/bundle and cannot be directly accessed. The larger application invokes it according to need and usage. As usually happens, all engines are not completely compatible with each other but a major part remains the same.
+
+**Special Characters:**
+
+Direct words can easily be used as literal characters to search but the power of regex is not limited for the same, even we would like to make the most out of it rather than mere direct word literals.
+
+In total, we have 14 characters with special meaning, which are:
+
+backslash \, the caret ^, the dollar sign \$, the period or dot ., the vertical bar or pipe symbol |, the question mark ?, the asterisk or star \*, the plus sign +, the opening parenthesis (, the closing parenthesis ), the opening square bracket [, the closing square bracket ] and the curly braces { }.
+
+If you use any of the characters from these, you need to escape the character using backslash \. Here is an example of its usage.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828071763/TiwSHD6dt.png)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828073529/psp9ozDR-.png)
+
+{ } curly braces are used to limit the match length. Here is an example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828075408/66Hn73x_b.png)
+
+^ is used to specify the start of a character set, whereas \$ is used to specify the ending of a pattern.
+
+Here is an example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828077255/qMVzTgYQw.png)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828079136/ZSegYeJQD.png)
+
+- and \* are used to capture a pattern “once or more” and “zero or more” time respectively.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828081126/2H43lWCYs.png)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828083082/p4SbCHbCd.png)
+
+You will come across many more as you read further.
+
+**Flags:**
+
+Flags are a very important part of RegEx usage. It defines the scope of usage of a particular patter. Here are the most widely used regex flags.
+
+g: Stands for global and doesn’t return just after the first match
+
+i: Stands for case-insensitivity
+
+x: Stands for extended, helpful while ignoring whitespaces
+
+s: Stands for single-line
+
+m: Stands for multiline
+
+u: Stands for Unicode, matches full Unicode
+
+a: Stands for ASCII, matches ASCII only characters
+
+**Usage in python:**
+
+To use the RegEx engine in python, we need to import the regex module which is implicitly available. The package is named as re.
+
+To import the “re” package in python:
+
+```python:regex.py
+import re
+```
+
+**Example Functions:**
+
+In this article, we will go through four of the most used regex-python functions.
+
+> search()
+> sub()
+> split()
+> findall()
+
+### search():
+
+This function only searches for the first occurrence of a pattern in a given string.
+
+Example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828085284/VYQzvMSSU.png)
+
+**findall():**
+
+This function returns a list of character matches.
+
+Example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828087022/QcJVEs5oh.png)
+
+**sub():**
+
+This function replaces the matches with the given character.
+
+Example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828089101/wHiKyxBoJ.png)
+
+**split():**
+
+This function returns a list with the given string split from each match.
+
+Example:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828091405/lT5yh8goA.png)
+
+**Summary:**
+
+Now here is a short recap of what we read so far.
+
+- What is RegEx
+
+- RegEx Engine
+
+- Characters and their usage.
+
+- Flags in RegEx
+
+- Usage of RegEx in Python
+
+- Sample Example for the same.
+
+You might have already figured out the diverse usage of RegEx and Python. So now it’s your turn to get started and Happy Coding!!
+
+**Resources:**
+
+1. Get a detailed article on RegEx by [Jonny Fox](https://twitter.com/FoxJonny). [https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
+
+1. Practice RegEx online with custom test-cases: [https://regex101.com/](https://regex101.com/)
+
+1. Learn about Python and its usage: [https://www.w3schools.com/python/python_regex.asp](https://www.w3schools.com/python/python_regex.asp)
+
+1. Documentation for the re module, Python: [https://docs.python.org/3/library/re.html](https://docs.python.org/3/library/re.html)

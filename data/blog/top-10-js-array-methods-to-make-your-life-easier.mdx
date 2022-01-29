@@ -1,0 +1,266 @@
+---
+title: "Top 10 JS Array methods to make your life easier"
+publishedDate: "2021-04-25"
+summary: "Here are 10 of the most useful array methods in JavaScript to make your life less stressful."
+author: "Tshiteej Bhardwaj"
+tags: JavaScript, Array, Methods
+---
+
+# Top 10 JS Array methods to make your life easier
+
+Arrays are not just objects where you need to loop through the elements to get the job done. With the right tools in place you can very easily simplify your job and most importantly enjoy doing it.
+Here are a few of the most useful array methods/properties in JavaScript to make your life easier(or maybe less stressful).
+
+### length
+
+This might be the most used array property across the dev community.
+Basically the function returns the length of the array.
+
+Here is how it works:
+
+```javascript:length.js
+// Syntax
+arr.length
+
+// Example
+let places = [“Bangalore”, “Gangtok”, “Begusarai”, “Delhi”]
+
+console.log(places.length)
+
+// Output: 4
+
+```
+
+Being an array property the value can be manipulated to increase/decrease the length of the array.
+
+### fill()
+
+The Array method fill() returns an array filled with a static value over a given range of indices.
+
+The method accepts three parameters, which are: value, start, end
+Where, value is a required parameter where as start and end are optional.
+As start and end are optional parameters they in turn take the beginning and end of the array as default values respectively.
+
+Here is how it works:
+
+```javascript:fill.js
+// Syntax
+Arr.fill(value, start, end);
+
+// Example
+let arr = [];
+arr.length = 5;
+
+let ar = arr.fill("x", 0, 4);
+console.log(ar)[
+
+// Output:[ "x", "x", "x", "x", undefined];
+```
+
+You see what happened there, the length of the array was 5, only the first 4 places were filled, hence the last element turned out to be undefined.
+
+### push()
+
+If you have worked with arrays there are very high chances that you are not alien to this array method.
+push() method is used to add an element to the end of the array and also implicitly returns the length of the new array.
+
+Here is how it works:
+
+```javascript:push.js
+// Syntax
+
+arr.push(element);
+
+// Example
+
+let arr = [1, 2, 3];
+let len = arr.push(4, 5);
+
+console.log(arr);
+
+// Output: [1,2,3,4,5]
+
+console.log(len);
+
+// Output: 5
+```
+
+### concat()
+
+The concat() method is used to concatenate two or more arrays and return the new array, making no changes to the existing ones.
+
+```javascript:concat.js
+// Syntax
+
+arr.concat(arr1,arr2,...)
+
+// Example
+let arr = [1,2]
+let arr1 = [3]
+let arr2 = [4,5,6]
+console.log(arr.concat(arr1,arr2))
+
+// Output: [1,2,3,4,5,6]
+
+```
+
+### slice()
+
+As the name itself signifies, this method returns a portion of an array into a new array object.
+It accepts a total of two parameters, start and end. Here start and end represents the indices of the array. Do take care that the end index is not included in the returned array.
+
+Here is how it works:
+
+```javascript:slice.js
+// Syntax
+
+arr.slice(start, end);
+
+// Example
+let arr = [1, 2, 3, 4, 5, 6];
+let arr1 = arr.slice(2);
+let arr2 = arr.slice(2, 4);
+
+console.log(arr1);
+
+// Output: [3,4,5,6]
+
+console.log(arr2);
+
+// Output: [3,4]
+```
+
+### includes()
+
+As the name itself defines, this method is used to check if an array contains a particular entry. The value returned is boolean in nature. I.e either true or false
+
+Here is how it works:
+
+```javascript:include.js
+// Syntax
+
+arr.includes(element);
+
+// Example
+let arr = [1, 2, 3, 4, 5, 6];
+
+console.log(arr.includes(5));
+
+// Output: true
+
+console.log(arr.includes(10));
+
+// Output: false
+```
+
+### reduce()
+
+The reduce() method is one of the most important and useful methods I came across. It accepts two parameters, reducer function and initial value of the accumulator, the later one being optional, and returns the value received after applying the reducer function on each of the elements of the array.
+
+Here is how it works:
+
+```javascript:reduce.js
+
+// Example
+let arr = [1,2,3,4]
+let reducer = (acc, curr) => acc + curr
+
+let value = arr.reduce(reducer, 0)
+
+console.log(value)
+
+// Output: 10
+// 1+2+3+4
+
+let value1 = arr.reduce(reducer, 10)
+
+console.log(value1)
+
+// Output: 20
+// 10+1+2+3+4
+
+We can restructure the above example into:
+
+let arr = [1,2,3,4]
+
+let value = arr.reduce((acc, curr) => {
+Return acc + curr
+}, 0)
+
+console.log(value)
+
+// Output: 10
+// 1+2+3+4
+
+```
+
+### filter()
+
+The filter() method returns a new array, with the elements from the previous array that pass a certain condition. It accepts a single conditional implementation function as a parameter.
+
+Here is how it works:
+
+```javascript:filter.js
+// Example
+let arr = [1, 2, 3, 4, 5, 6];
+
+let arr1 = arr.filter(i => i > 3);
+
+console.log(arr1);
+
+// Output: [4,5,6]
+```
+
+### map()
+
+The map() method returns a new array, after implementing a function over each and every element of the previous array. Thus, evidently it accepts an implementation function as its argument.
+
+Here is how it works:
+
+```javascript:map.js
+// Example
+let arr = [1, 2, 3];
+
+let arr1 = arr.map(i => i + 3);
+
+console.log(arr1);
+
+// Output: [4,5,6]
+```
+
+### flat()
+
+The flat() method returns an array with all the sub-array elements concatenated upto a specified depth. It accepts one parameter, i.e the depth level specifying how deep a nested array structure should be flattened. The value of depth default to 1.
+
+Here is how it works:
+
+```javascript:flat.js
+// Example
+let arr = [0, 1, 2, [[3, 4]]];
+
+let arr1 = arr.flat();
+let arr2 = arr.flat(2);
+
+console.log(arr1);
+
+// Output: [0,1,2,[3,4]]
+
+console.log(arr2);
+
+// Output: [0,1,2,3,4]
+```
+
+<hr />
+
+**I hope you found the post helpful. So now it’s your turn to get started and Happy Coding!!**
+
+**Resources:**
+
+The best documentation for JavaScript learners/enthusiasts/experts over the internet is undoubtedly:
+
+https://developer.mozilla.org/en-US/
+
+You can practice JS online on platforms like:
+
+- https://playcode.io/
+- https://jsfiddle.net/

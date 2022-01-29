@@ -1,0 +1,147 @@
+---
+title: "Test Automation Using Python and Selenium"
+publishedDate: "2020-04-26"
+summary: "Try automating your web tests with Python and Selenium"
+author: "Tshiteej Bhardwaj"
+tags: Selenium, Python, Automation, Testing
+---
+
+<!-- # Test Automation Using Python and Selenium -->
+
+## **Introduction to Selenium**
+
+Selenium is an open-source automated testing framework used to validate web applications across different browsers and platforms. It was created by Jason Huggins in 2004, a Software Engineer at ThoughtWorks. He created it when he had to test a web application multiple times, manually leading to higher inefficiency and effort.
+
+**How Inspiring!!!**
+
+Selenium Software is not just a single tool but a suite of software, each piece catering to different testing needs of an organization. Here is the list of tools
+
+- Selenium Integrated Development Environment (IDE)
+
+- Selenium Remote Control (RC)
+
+- WebDriver
+
+- Selenium Grid
+
+In this scope, we will discuss more into WebDriver.
+
+Note: We cannot test any desktop or mobile applications using Selenium.
+
+## **Why Selenium**
+
+The main advantages of selenium include:
+
+- Interoperability to be used with all Programming languages.
+
+- Ability to support all Platforms and Browsers.
+
+- Ease of integration with most of the testing frameworks adding to the ease of creating test cases and generating test reports.
+
+- Ability to integrate with CI-CD application likes Maven, Jenkins, etc for seamless continuous testing.
+
+## **Python for Automation Testing:**
+
+Python is the most easy-to-understand and learn programming language, at present. On top of that, it is completely open-source, high level, and is blessed with a large community to support. It also has multiple built-in frameworks for debugging, testing, and improved workflows.
+
+## **Selenium Web Driver and Python Binding:**
+
+We Install the selenium library into our python environment using the pip package manager.
+
+pip install selenium
+
+To start off with Selenium in Python we need to import the Selenium web driver and the browser web driver(In this example we are using the Chrome Browser), here is how you can do it.
+
+from selenium import webdriver
+
+Note: Don’t name your file as selenium.py, in case you already did, rename the file and delete the .pyc file, if created.
+
+Now we import the Browser Web Driver
+
+Note: Web Drivers vary with Platform use and Browser, and Browser Versions. Make sure to download the correct web driver according to your usage.
+
+driver = webdriver.Chrome(“&lt;BROWSER DRIVER PATH&gt;/chromedriver”)
+
+**Locators in Selenium Web Driver:**
+
+We will look forward to using the six basic Selenium Webdriver locators, which are:
+
+- The ID of THML tags
+
+- Name attribute of HTML tags
+
+- Links Texts
+
+- CSS selectors
+
+- Partial link texts
+
+- XPath of an element
+
+**ID Locator:**
+
+IDs are the safest and fastest locator option as an ID is unique to an element in a DOM structure.
+
+We use the
+
+driver.find_element_by_id(“&lt;ID NAME&gt;”)
+
+function to select an element with a certain ID.
+
+**Name Locator:**
+
+The function used to select an HTML element with a certain name attribute we use the function
+
+driver.find_element_by_name(“&lt;NAME&gt;”)
+
+**Link Text Locator:**
+
+driver.find_element_by_link_text() is the function used to select an element by text present in the Link.
+
+**CSS Selector:**
+
+driver.find_element_by_css_selector(“&lt;SELCTOR NAME&gt;”) function helps us to select an element based on the attribute in CSS style, eg. The name of an id starts with # and that of a class with ..
+
+**Partial link text selector:**
+
+driver.find_element_by_partial_link_text() function helps us to select an element in the DOM structure using just the partial text which is used as a link.
+
+**XPath Locator:**
+
+**XPath** is defined as an XML path. It is defined as the syntax or language for finding any element on the web page using XML path expression. **XPath** is used to find the location of any element on a webpage using HTML DOM structure.
+
+You might not be able to see the **XPath **of an element in the developer console. For Chrome users, you need to install an Extension named **ChroPath **to get the XPath details in the developer console.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828054535/ofA5D5tkO.png)
+
+driver.find_element_by_xpath(“&lt;XPath Name&gt;”) is the function used to select an element from the DOM using its XPath value.
+
+## **Complete Example:**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1608828056970/vYUwMWu08.png)
+
+In this example, Selenium helps us to crawl the Amazon website and select a **Samsung 32 inch LED TV**.
+
+Here is a video to show how this works.
+
+[https://youtu.be/V6kxVUYKp7M](https://youtu.be/V6kxVUYKp7M)
+
+## **Summary:**
+
+We will take an overview of the article here. In this article we learned about:
+
+- What is Selenium and Why to use it
+
+- What is a Web Driver and how to use it
+
+- Basic Selenium Web Driver Locators
+
+- Saw the basic code and simple Demo of its usage.
+
+I hope you enjoyed throughout the article, Looking forward to suggestions and discussions.
+
+**Resources:**
+
+- You can learn more about locators here: [https://www.browserstack.com/guide/locators-in-selenium](https://www.browserstack.com/guide/locators-in-selenium)
+
+- Here is a basic tutorial regarding Selenium by Edureka: [https://www.youtube.com/watch?v=CwLrdjgsJjU](https://www.youtube.com/watch?v=CwLrdjgsJjU)
