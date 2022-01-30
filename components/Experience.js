@@ -45,7 +45,7 @@ function Experience() {
               </ListItem>
               <ListItem>
                 <ListIcon as={FaBusinessTime} color='teal.600' />
-                Software Development Engineer 2
+                Software Development Engineer 2 (October 2021 - Present)
               </ListItem>
               <ListItem>
                 <ListIcon as={FaLocationArrow} color='teal.600' />
@@ -96,7 +96,7 @@ function Experience() {
               </ListItem>
               <ListItem>
                 <ListIcon as={FaBusinessTime} color='teal.600' />
-                Senior Software engineer (January 2021 - Present)
+                Senior Software engineer (January 2021 - October 2021)
               </ListItem>
               <ListItem>
                 <ListIcon as={FaBusinessTime} color='teal.600' />
