@@ -1,0 +1,70 @@
+---
+title: "The Lazy Developers Way to Load Balancer"
+publishedDate: "2022-03-11"
+summary: "What is a load balancer, and it's types? Let's understand."
+author: "Tshiteej Bhardwaj"
+tags: Load Balancer, OSI model
+---
+
+## What is a Load Balancer?
+
+A load balancer or aka fault-tolerant system essentially distributes the incoming requests to multiple machines, processes, or services. This is done so the load can be distributed across all available resources, rather than bombarding a particular resource with loads which will reduce the performance of the system. Also, helps in tackling the risks associated with a Single point of failure.
+Load balancers can be physical hardware devices or can be implemented using a software process.
+Let’s take a sneak peek at the layers in the OSI model where load balancers are used.
+
+**What is Layer 4 and 7?**
+
+In short, With reference to the OSI model, Layer 4 aka the Transport Layer is responsible for the Segmentation and the Reassembly of messages.
+Layer 7, the Application Layer is implemented by the network applications(like Browsers… etc). These applications produce the data, which has to be transferred over the network.
+
+I would highly recommend going through the OSI model in detail.
+
+## What Layer 4 & 7 load balancer is?
+
+### Layer 4 Load Balancer:
+
+Having no access to the data present which is most of the time anyways encrypted at this stage. This system has a list of server addresses (IP addresses) among which requests need to be distributed. The requests can be distributed in a variety of ways depending upon the algorithm the system is executing. This can only judge on the basis of latency and availability of servers.
+	
+**Advantages:**
+- These load balancers are more secure as it has no access to the original data, so in case this system is compromised the attacker is only left with encrypted data.
+- The load balancing is simpler in this system.
+- Although there is an entity in the middle, this operates on a single TCP connection making the connection fast.
+	
+**Disadvantages:**
+- No smart decisions are made on the basis of data, as it does not have access to data.
+- Cannot be used in microservices.
+- Data cannot be cached.
+
+
+### Layer 7 Load Balancer:
+
+These systems have all the access to the content of the request, thus can make smart decisions based on data. Different types of requests can be distributed among different sets of servers.
+
+**Advantages:**
+- Smarter Load Balancing
+- Data can be cached.
+- Great for usage in microservices.
+
+**Disadvantages:**
+- Decrypts data, so increases the chances of theft in case the system is compromised.
+- Creates two TCP connections, hence reducing the speed comparatively
+
+
+### Summary:
+
+Now here is a short recap of what we read so far.
+
+- What is Load Balancer
+
+- What are different types of load balancers
+
+- What are Layer 4 and Layer 7 Load Balancers
+
+- Advantages and Disadvantages of different types of Load Balancers
+
+
+### Resources:
+
+1. Get a detailed article on Load Balancers. [GeeksForGeeks](https://www.geeksforgeeks.org/load-balancer-system-design-interview-question/?ref=gcse)
+
+2. Hussein Nasser's youtube video: [Youtube](https://www.youtube.com/watch?v=aKMLgFVxZYk&list=PLQnljOFTspQWdgYcGXCTkjda8vd2jWJYt)

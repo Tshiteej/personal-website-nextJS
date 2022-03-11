@@ -44,7 +44,7 @@ export default function BlogLayout({ children, frontMatter }) {
   const title = frontMatter.title;
   const caption = frontMatter.summary;
   const hashTags = frontMatter.tags.split(",").map(ele => {
-    return ele.trim();
+    return ele.trim().replace(/\s/,"_");
   });
   const related = "tshiteej";
   const source = "https://www.tshiteej.com/";

@@ -97,31 +97,9 @@ const Header = props => {
             _hover={{ border: "1px", borderColor: color[colorMode] }}
             color={color[colorMode]}
           >
-            Blog
+            Articles
           </Button>
         </NextLink>
-        {/* <NextLink href='/' passHref>
-          <Button
-            as='a'
-            variant='ghost'
-            p={[1, 2, 4]}
-            _hover={{ border: "1px", borderColor: navHoverBg[colorMode] }}
-            color={color[colorMode]}
-          >
-            Work
-          </Button>
-        </NextLink>
-        <NextLink href='/' passHref>
-          <Button
-            as='a'
-            variant='ghost'
-            p={[1, 2, 4]}
-            _hover={{ border: "1px", borderColor: navHoverBg[colorMode] }}
-            color={color[colorMode]}
-          >
-            Contact
-          </Button>
-        </NextLink> */}
       </Box>
 
       <Box
