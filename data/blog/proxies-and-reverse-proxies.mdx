@@ -1,0 +1,41 @@
+---
+title: "Proxies and Reverse Proxies"
+publishedDate: "2023-01-29"
+summary: "Discover the key differences between proxies and reverse proxies and their impact on web applications"
+author: "Tshiteej Bhardwaj"
+tags: Proxies, Reverse Proxies, Microservices, Infrastructure
+---
+
+## What is a Proxy?
+A proxy server is a server that sits between a client and a server and acts as an intermediary between the two. A client connects to the proxy server, which in turn forwards the request to the server. The server then sends its response back to the proxy, which forwards it to the client.
+
+**Advantages of using a proxy server include:**
+
+- Improved security: Proxies can provide SSL termination, which allows the web server to process requests without having to perform the resource-intensive task of decrypting SSL/TLS encryption. This can help protect against man-in-the-middle attacks and other forms of encryption-based attacks.
+- Improved performance: Proxies can provide caching, which can significantly improve the performance of a web application by reducing the number of requests that need to be handled by the web server.
+- Concealment of the origin servers: Proxies can hide the origin servers from the clients, providing an extra layer of security
+
+**Disadvantages of using a proxy server include:**
+- Increased complexity: Adding a proxy to a web infrastructure can increase the complexity of the overall system. It may require additional configuration and maintenance.
+- Increased latency: Proxies may introduce additional latency due to the added step of forwarding requests to the web server.
+- Limited control over origin servers: As the proxy sits in front of the origin servers, it may not have direct control over them and may not be able to troubleshoot or fix issues that arise on the origin servers.
+- Additional point of failure: Proxies can become an additional point of failure in the infrastructure, if not properly configured or maintained.
+
+## What is a Reverse Proxy?
+A reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers. These resources are then returned to the client as if they originated from the proxy server itself.
+
+**Advantages of using a reverse proxy include:**
+- Improved security: Reverse proxies can provide SSL termination, which allows the web server to process requests without having to perform the resource-intensive task of decrypting SSL/TLS encryption. This can help protect against man-in-the-middle attacks and other forms of encryption-based attacks.
+- Improved performance: Reverse proxies can provide load balancing, which distributes requests across multiple web servers in order to balance the load and improve performance. They can also provide caching, which can significantly improve the performance of a web application by reducing the number of requests that need to be handled by the web server.
+- Improved reliability: Reverse proxies can provide access control, which can be useful for web applications that need to be protected against unauthorized access.
+- Concealment of the origin servers: Reverse proxies can hide the origin servers from the clients, providing an extra layer of security
+
+**Disadvantages of using a reverse proxy include:**
+
+- Increased complexity: Adding a reverse proxy to a web infrastructure can increase the complexity of the overall system. It may require additional configuration and maintenance.
+- Increased latency: Reverse proxies may introduce additional latency due to the added step of forwarding requests to the web server.
+- Limited control over origin servers: As the reverse proxy sits in front of the origin servers, it may not have direct control over them and may not be able to troubleshoot or fix issues that arise on the origin servers.
+- Additional point of failure: Reverse proxies can become an additional point of failure in the infrastructure, if not properly configured or maintained.
+
+In conclusion, proxies and reverse proxies can be powerful tools for improving security, performance, and reliability of web applications. They can also provide an extra layer of security by concealing the origin servers. However, it's important to keep in mind that they can also increase complexity, latency and they can be an additional point of failure in the infrastructure if not properly configured or maintained. It's important to carefully consider the specific needs of your web application and weigh the pros and cons of using proxies or reverse proxies before implementing them in your infrastructure.
+
