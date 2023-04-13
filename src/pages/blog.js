@@ -19,9 +19,9 @@ import Footer from "../components/Footer";
 
 import { SearchIcon } from "@chakra-ui/icons";
 
+
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
-
   const filteredBlogPost = posts
     .sort(
       (a, b) =>
@@ -69,7 +69,7 @@ export default function Blog({ posts }) {
               I love to write around Web Development, and related technologies.
               I hope that you find the articles helpful.
             </Text>
-            <InputGroup mb={4} mr={4} w='100%' mb={5} mt={2}>
+            <InputGroup mr={4} w='100%' mb={5} mt={2}>
               <Input
                 aria-label='Search by title'
                 placeholder='Search by title'
@@ -97,6 +97,5 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog");
-
   return { props: { posts } };
 }

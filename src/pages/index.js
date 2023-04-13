@@ -11,6 +11,8 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Connect from "../components/Connect";
 
+import { generateRssFeed } from '../lib/generateRSSFeed';
+
 export default function Index() {
   const { colorMode } = useColorMode();
   return (
@@ -40,4 +42,9 @@ export default function Index() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  await generateRssFeed();
+  return { props: {  } };
 }

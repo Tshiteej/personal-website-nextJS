@@ -124,8 +124,8 @@ const MDXComponents = {
   br: props => <Box height='24px' {...props} />,
   hr: Hr,
   a: CustomLink,
-  p: props => <Text as='p' mt={0} lineHeight='tall' {...props} />,
-  ul: props => <Box as='ul' pt={2} pl={4} ml={2} {...props} />,
+  p: props => <Text as='p' mt={0} lineHeight='2rem' {...props} />,
+  ul: props => <Box as='ul' pt={2} pl={4} ml={2} lineHeight='1.8rem' {...props} />,
   ol: props => <Box as='ol' pt={2} pl={4} ml={2} {...props} />,
   li: props => <Box as='li' pb={1} {...props} />,
   blockquote: Quote
