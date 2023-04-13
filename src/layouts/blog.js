@@ -156,7 +156,7 @@ export default function BlogLayout({ children, frontMatter }) {
           <Stack direction='row'>
             {hashTags.map(i => {
               return (
-                <Badge variant='subtle' py={2} px={3}>
+                <Badge variant='subtle' py={2} px={3} key={i}>
                   {i}
                 </Badge>
               );

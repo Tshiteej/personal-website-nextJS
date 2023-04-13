@@ -20,7 +20,7 @@ function Intro() {
       <Box w='70vw' lineHeight='8' mt={20}>
         Hello Everyone! <br />
         My name is Tshiteej Bhardwaj. I love creating things from scratch. I
-        started my journey in tech by playing "Roadrash" 😜. Jokes apart, I
+        started my journey in tech by playing &quot;Roadrash&quot; 😜. Jokes apart, I
         started my journey with C++ by building small banking systems as a
         hobby. Today, I build things for the web , mostly using JavaScript.{" "}
         <br />
