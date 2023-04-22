@@ -53,7 +53,7 @@ export default function Blog({ posts }) {
             // maxWidth='700px'
             // minWidth='30vw'
             w='100%'
-            px={4}
+            px={[4, 0]}
           >
             <Flex
               flexDirection='row'
