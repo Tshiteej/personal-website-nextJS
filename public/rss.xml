@@ -9,10 +9,17 @@
             <link>https://www.tshiteej.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 13 Apr 2023 05:42:21 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Apr 2023 11:55:40 GMT</lastBuildDate>
         <atom:link href="https://www.tshiteej.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 13 Apr 2023 05:42:21 GMT</pubDate>
+        <pubDate>Sat, 22 Apr 2023 11:55:40 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[What is Serverless Computing?]]></title>
+            <description><![CDATA[Tird to listening of Serverless computing! What it really is]]></description>
+            <link>https://www.tshiteej.com/blog/what-is-serverless-computing</link>
+            <guid isPermaLink="true">https://www.tshiteej.com/blog/what-is-serverless-computing</guid>
+            <pubDate>Sat, 22 Apr 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Top 10 JS Array methods to make your life easier]]></title>
             <description><![CDATA[Here are 10 of the most useful array methods in JavaScript to make your life less stressful.]]></description>

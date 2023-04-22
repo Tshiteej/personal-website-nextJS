@@ -1,0 +1,61 @@
+---
+title: "What is Serverless Computing?"
+publishedDate: "2023-04-22"
+summary: "Tired of listening about Serverless computing! What it really is?"
+author: "Tshiteej Bhardwaj"
+tags: FaaS, Serverless Computing, Infrastructure, Cloud Computing
+---
+
+
+## Serverless Computing
+
+Serverless Computing is a relatively new paradigm in cloud computing that continues to grow popularity for its ability to allow developers to focus on building stuff without worring about managing the infrastructure.
+
+### What is Serverless Computing?
+
+Serverless is a cloud-native development model based on the conceept of Functions-as-a-Service (FaaS) that allows developers to build and run applications without having to manage servers. The cloud provider takes care of the infrastructure and the customer only pays for the amount of computing resources consumed. This is different from the traditional computing models where the customer is responsible for managing the infrastructure and scaling as needed.
+
+Serverless is based on the concept of Functions-as-a-Service (FaaS). In a traditional application, the developer writes code, compiles it, and deploys it to a server. The server is then responsible for running the code and responding to requests.
+In a serverless application, the developer writes code for a specific function/job and deploys it to the cloud provider. Once deployed, serverless apps respond to demand and automatically scale up and down as needed. The cloud provider takes care of running the code and responding to requests.
+
+### How does this even work?
+
+Under this model, a cloud provider runs physical servers and dynamically allocates their resources (in the form of containers) on behalf of users who can deploy code directly.
+
+Serverless computing is event-driven, meaning that it is triggered by events. When an event occurs, such as a request to an API endpoint, the cloud provider creates a container and runs the code in the container. The container is destroyed once the function has completed execution.
+
+### Advantages:
+
+Here are a few advantages that serverless computing brings with it:
+
+1. Reduced Cost: Serverless Computing is cost-effective as the customer only pays for the amount of computing resources used.
+2. Scalability: Being elastic in nature, Serverless systems are highly scalable. The cloud cloud provider takes care of scaling the infrastructure automatically.
+3. Reduced Management: The management and maitainance overhead is automatically reduced as the Cloud Provider takes care of the same.
+4. Faster Deployments: This model allows developers to quickly deploy applications without worrying about the infrastructure. Developers focus more on development, giving minimal attention to deployment and server management overheads.
+5. Improved Resilience: Serverless computing is highly resilient because the cloud provider automatically manages infrastructure and provides redundancy.
+
+Like everything else in the world(real and virtual) even Serverless Computing is not perfect. Thus, this model comes with its own set of challenges as well.
+
+### Challenges:
+
+1. Cold Start: Cold start occurs when a function has not been used for a certain amount of time and needs to be restarted. This can result in delayed response time, which can be a problem for systems expecting low latency.
+2. Limited Control: Serverless Computing provides limited control over the infrastructure, making it difficult to customize for specific needs.
+3. Complexity: Sometimes it becomes complex to manage serverless systems as this requires some understanding of event-driven architectures.
+
+### Real World Applications:
+
+Now, here are some real-life systems that use Serverless Computing.
+
+1. Microservices: This model can be used to build microservices that can be scaled independantly.
+2. IoT Applications: Serverless computing is ideal for IoT applications that require fast response times.
+3. Data Processing: Tasks like processing and analysing large amounts of data can ideally be taken care of usinf serverless computing.
+
+### Conclusion:
+
+In conclusion, serverless computing is an exciting paradigm for building and running applications. It provides a lot of benefits, including reduced costs, scalability, increased agility, and reduced complexity. Whether you're a seasoned developer or just getting started with cloud computing, serverless offers a lot of potential to streamline your application development and deployment processes. There are many cloud providers offering serverless computing options, so do your research and find the one that best fits your needs. And with serverless still being a relatively new technology, there's plenty of room for experimentation and innovation, so get out there and start building!
+
+Some of the popular serverless services available include AWS Lambda, Azure Function, Google Cloud Functions, IBM Cloud Function, OpenFaaS and many more.
+
+### References:
+
+1. Get a detailed article on Serverless Computing by Redhat [here](https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless)
