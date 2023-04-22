@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postbuild": "next-sitemap",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -28,6 +29,7 @@
     "next": "13.3.0",
     "next-google-fonts": "^2.2.0",
     "next-mdx-remote": "^4.4.1",
+    "next-sitemap": "^4.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
