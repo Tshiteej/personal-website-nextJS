@@ -30,12 +30,12 @@ export default class MyDocument extends NextDocument {
             href='https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Roboto+Mono:ital,wght@1,500&display=swap'
             rel='stylesheet'
           />
-          <link rel='icon' href='/tb.png' type='image/icon type' />
+          <link rel='icon' href='/tb_50.png' type='image/icon type' />
           <meta property='og:url' content='https://www.tshiteej.com/' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Tshiteej Bhardwaj' />
           <meta name='twitter:card' content='summary' />
-          <meta property='og:image' content='https://www.tshiteej.com/tb.png' />
+          <meta property='og:image' content='https://www.tshiteej.com/tb_50.png' />
           <meta
             property='og:description'
             content='Portfolio site of Tshiteej Bhardwaj.'

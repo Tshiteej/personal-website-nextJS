@@ -7,7 +7,7 @@ const formatText = (text) => {
 }
 const generateRssFeed = async() => {
     const allPosts = await getAllFilesFrontMatter("blog");
-    const site_url = 'https://www.tshiteej.com';
+    const site_url = process.env.NEXT_PUBLIC_DOMAIN_URL;
 
     const feedOptions = {
         title: 'Blog posts | RSS Feed',

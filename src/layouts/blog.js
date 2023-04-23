@@ -58,7 +58,7 @@ export default function BlogLayout({ children, frontMatter }) {
           <meta property='og:title' content={frontMatter.title} />
           <meta property='og:description' content={frontMatter.summary} />
           <meta name='twitter:card' content='summary' />
-          <meta property='og:image' content='https://www.tshiteej.com/tb.png' />
+          <meta property='og:image' content='https://www.tshiteej.com/tb_50.png' />
           <meta name='og:keywords' content={frontMatter.tags} />
           <meta name='og:author' content='Tshiteej Bhardwaj' />
         </Head>
