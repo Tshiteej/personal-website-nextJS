@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tshiteej.com
+
+# Sitemaps
+Sitemap: https://www.tshiteej.com/sitemap.xml
+Sitemap: https://www.tshiteej.com/server-sitemap.xml
