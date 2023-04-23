@@ -11,4 +11,3 @@ Host: https://www.tshiteej.com
 
 # Sitemaps
 Sitemap: https://www.tshiteej.com/sitemap.xml
-Sitemap: https://www.tshiteej.com/server-sitemap.xml
