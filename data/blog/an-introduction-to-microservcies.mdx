@@ -1,0 +1,60 @@
+---
+title: "An Introduction to Microservices."
+publishedDate: "2023-05-01"
+summary: "What is a microservice? Is it really a solution to all the architectural problems?"
+author: "Tshiteej Bhardwaj"
+tags: Microservices, Architecture, Infrastructure, Cloud Computing, System Design
+---
+
+
+## Microservices
+
+Microservices - also known as microservice architecture is an architectural style that structures an application as a collection of services that are Independentlly Deployable and Loosely coupled to one another. This involves breaking down a large application into smaller, independent services that can be managed independently.
+
+Each Microservice is designed to perform a specific task, communicate with other services and run its own processes. This enables organizations to deliver large, complex applications rapidly, frequently, reliable and sustainably.
+
+Each component of a microservice architencture has: its own CPU and its own runtime environment ensuring each that service is distinct from one another.
+
+### Benefits of Microservices:
+
+1. Scalability: This architectural style allows better scalability as each and every services can be scaled independently as each of them are loosely coupled. This is particularly useful when a specific servcie requires more resources than others.
+2. Flexibility: Developers/ Teams can makechanges to a particular service without affecting the entire application. This allows for greater flexibility and agility when it comes to making changes and updates.
+3. Resilience: Incase of failure of a microservice, the rest of the application can continue to function without interruption. This is because each microservcie is designed to be independent of the others which reduces the risk of failure affecting the entire application.
+4. Easier Deployments: The characteristic of loose coupling of services in Microservice architecture brings with it the flexibility of independent deployments without affecting the entire application.
+
+### Disadvantages of Microservcies:
+
+1. Complexity: Microservices can be more complex than traditional monolithic architectures because they require additional infrastructure and tools to manage.
+2. Communication: Communication in this case might become challenging, especially when different microservcies are developed by different teams.
+3. Cost: Microservices can also be more costly. They usually run in their own environments with their own CPUs. They work through API calls which have a price tag.
+4. Testing: Testing Microservcies can be more challenging than testing monolithic applications because it requirs testing each microservcie individually as well as testing how they interact with each other.
+5. Security: Microservices can increase the risk of security breaches because there are more entry points into the system, and each microservcie needs to be secured individually.
+
+### Points of comparison:
+
+**Monolithic Architecture:**
+
+- Easier to develop for smaller applications.
+- Fewer dependencies between components.
+- Can even offer better performance in some cases because the application as a whole can be optimized as a whole.
+- Has limited scalability because the entire application needs to be scaled.
+- Difficult to maintain as changes to one part of the application might affect the entire application.
+- Can be harder to integrate with other applications.
+- Difficullt to isolate faults
+
+**Microservice Architecture:**
+
+- Easier to scale.
+- Improved fault tolerence
+- Encourages modular design leading to easier maintainance over time.
+- Allows greater flexibility and agility when it comes to making updates/ changes.
+- Increases complexity, due to increase in the number of components to manage and deploy
+- Requires more communication between components, which might introduce latency and overhead.
+- Indroduces potential data consistency issues between servcies.
+- Requires additional toolling and infrastructure to manage and monitor.
+
+### Conclusion:
+
+Ultimately, one can't really say that one is better than another. The decision will purely depend on the specific requirements of the application and the resources available.
+
+While microservices architecture can offer several advantages over monolithic architecture, it can also introduce additional complexity in terms of deployment, communication between services, and data consistency across services. Careful consideration and planning are required to ensure that the benefits of microservices architecture outweigh the potential drawbacks.
