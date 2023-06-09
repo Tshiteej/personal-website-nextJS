@@ -1,0 +1,42 @@
+---
+title: "gRPC: Simplifying Communication in Modern Applications"
+publishedDate: "2023-06-09"
+summary: "What is gRPC? What are its advantages over REST and SOAP?"
+author: "Tshiteej Bhardwaj"
+tags: Infrastructure, Microservices, gRPC, RPC, Communication
+---
+
+## gRPC
+
+Before we get into gRPC, let's first find out what is RPC.
+RPC stands for Remote Procedural Call. It is a protocol that alloows a computer program to request a servcie or behaviour from another program located on a different machine or in a different network. The underlying communication can take place over different network protocols like TCP/IP or HTTP.
+RPC provides a higher-level abstraction for inter-process communication, enabling different components or systems to interact and cooperate with each other transparently. It simplifies the development of distributed systems by allowing developers to focus on the logic of their programs without worrying about the low-level networking details.
+
+gRPC is a modern open source, high performance framework developed by google, based on the principles of RPC. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication.
+
+### The need for gRPC:
+
+1. Performance and Efficiency: gRPC was designed with a focus on performance and efficiency. It utilizes HTTP/2 as the underlying transport protocol, bringing with it the upsides of low latency and higher reliability. Also, it uses binary serialization with Prorocol Buffers to achieve efficient payload size and faster processing.
+2. Language Agnostic: gRPC supports multiple programming languages thought single client library which can be used across all popular languages. This ensures interoperability between services with the freedom for developers to use their preferred language. REST and SOAP, on the other hand, often have language-specific frameworks and libraries, which can limit the choices for developers.
+3. Bi-directional Streaming: gRPC supports bidirectional streaming, allowing both the client and server to send multiple messages asynchronously over a single connection. This capability is crucial for real-time applications, where continuous data exchange is required. REST and SOAP primarily follow request-response patterns, making it more challenging to achieve real-time bidirectional communication.
+4. Ecosystem: gRPC has a growing ecosystem of tools, libraries, and community support. It provides features like load balancing, service discovery, and authentication, making it easier for developers to build complex distributed systems.
+5. Interoperability: gRPC offers interoperability optioons, allowing it to integrate with existing systems and coexist with legacy APIs. It supports compatibility between different versions of the same service and provides backward and forward compatibility mechanisms. This capability makes it easier to evolve services gradually without breaking existing clients.
+
+gRPC also provides various modes of communication, for different use-cases. They are listed below:
+
+### Modes of gRPC:
+
+1. Unary: This is the simplest and most common mode of communication in gRPC. In this mode, the client sends a single request to the server and waits for a single response. This is similar to the traditional request-response mechanisms found in REST APIs. This can be used for uses-cases where the clientneeds to make a single request and receives a single response.
+2. Server-side Streaming: Here, the client sends a single request to the server, and the server responds with the stream oof messages. The client can read the server's response as a stream, processing each message as it arrives. This can be used for use-cases that require real-time data feeds or bulk data transfers.
+3. Client-side Streaminng: In client-side streaming RPC, the client sends a stream of messages to the server, and the server responds with a single response. The client can write multiple messages to the server's request stream, and the server processes these messages and sends back a response when it finishes. This can be used for use-cases that require uploading files, or batch processing.
+4. Bidirectional Streaming: Bidirectional streaming RPC allows the client and server to send multiple messages asynchronously over a single connection. Both the client and server can send and receive streams of messages simultaneously, enabling real-time and interactive communication between the two. This can be used for use-cases that require bidirectional communication, such as chat application, collaborative editing, etc.
+
+Despite various upsides of the framework, it is not perfect a=like anything under the sun.
+
+### Disadvantages of gRPC:
+
+1. Complexity: Compared to simpler communication protocols like REST, gRPC can be more complex to set up and configure. It requires defining and managing Protocol Buffers for message structures and service interfaces.
+2. Limited Browser Support: gRPC relies on HTTP/2 as the underlying transport protocol. While most modern programming languages have good support for gRPC, it may not be well-supported in some older or less popular browsers. This limitation can affect client-side usage of gRPC in certain scenarios.
+3. Firewall and Proxy Challenges: Since gRPC uses HTTP/2, it may face challenges when traversing certain firewalls and proxies that are not fully compatible with the protocol.
+4. Tooling and Ecosystem Maturity: While gRPC has a growing ecosystem, it may not have the same level of tooling, libraries, and community support as more established protocols like REST or SOAP.
+5. Service Discoverability: Unlike REST, which leverages the HTTP standard for discoverability through URL paths and HTTP methods, gRPC does not provide a standardized mechanism for service discoverability. Developers need to rely on external service discovery tools or mechanisms to locate and connect to gRPC services.
