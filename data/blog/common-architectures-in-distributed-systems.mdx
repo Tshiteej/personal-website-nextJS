@@ -1,0 +1,32 @@
+---
+title: "Common Architectures in Distributed Systems"
+publishedDate: "2023-07-03"
+summary: "4 common architectural patterns in Distributed Systems"
+author: "Tshiteej Bhardwaj"
+tags: Infrastructure, Cloud Computing, Distributed Systems, Architecture
+---
+
+While designing a Distributed system it is necessary to pick the right one at inception.
+
+Here are the 4 most commonly used architectures:
+
+### Client-Server:
+
+In a client-server architecture, the client contacts the server to request specific data, which the server then provides back to the client. The client is intelligent enough to handle the request, process the data, format it, and present it to the end-user. While this architecture is not commonly used in everyday web applications, it is prevalent when multiple services share a common database and directly request data from it.
+
+### 3-Tier:
+
+The 3-tier architecture is widely used and consists of three layers. Unlike the client-server architecture, the clients in this architecture are stateless and not intelligent. The middle layer holds the business logic, and the clients interact with this layer, which in turn communicates with the server holding the data. Most web applications follow a 3-tier structure, where the client (browser) interacts with the business layer (webserver), which queries the server (database) for data. The business layer processes and optionally formats the data before sending it back to the client.
+
+### N-Tier:
+
+Building upon the 3-tier architecture, the n-tier application involves the middle layer (business layer) communicating with other services to obtain information. This pattern is typically observed when there are multiple independent business logics in the system. An example of n-tier architecture is a Microservices-based architecture, where each service is responsible for its own data and communicates with other services to acquire the required information. Therefore, a 3-tier application often evolves into an n-tier architecture.
+
+### Peer-to-Peer:
+
+In a peer-to-peer architecture, the system is decentralized, with no specific machines holding all the responsibilities. Instead, the responsibilities are distributed equally among all the machines, which act as both clients and servers, communicating with each other to fulfill requests. Popular examples of peer-to-peer architecture include BitTorrent and Bitcoin networks. While the n-tier architecture can potentially evolve into a peer-to-peer structure, this transition is not commonly observed. Typically, the decision to adopt a peer-to-peer approach is made during the inception of the service.
+
+### References:
+
+1. Get a detailed article on Distributed Systems [here](https://en.wikipedia.org/wiki/Distributed_computing)
+2. Also a precise explanation by Arpit Bhayani [here](https://arpitbhayani.me/blogs/architectures-in-distributed-systems/)

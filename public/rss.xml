@@ -9,9 +9,9 @@
             <link>https://www.tshiteej.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 01 May 2023 12:52:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jul 2023 18:15:26 GMT</lastBuildDate>
         <atom:link href="https://www.tshiteej.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 01 May 2023 12:52:32 GMT</pubDate>
+        <pubDate>Mon, 03 Jul 2023 18:15:26 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[What is Serverless Computing?]]></title>
@@ -54,6 +54,20 @@
             <link>https://www.tshiteej.com/blog/how-regex-in-python-isnt-as-bad-as-you-think</link>
             <guid isPermaLink="true">https://www.tshiteej.com/blog/how-regex-in-python-isnt-as-bad-as-you-think</guid>
             <pubDate>Wed, 15 Apr 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[gRPC: Simplifying Communication in Modern Applications]]></title>
+            <description><![CDATA[What is gRPC? What are its advantages over REST and SOAP?]]></description>
+            <link>https://www.tshiteej.com/blog/grpc-simplifying-communication-in-modern-applications</link>
+            <guid isPermaLink="true">https://www.tshiteej.com/blog/grpc-simplifying-communication-in-modern-applications</guid>
+            <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Common Architectures in Distributed Systems]]></title>
+            <description><![CDATA[4 common architectural patterns in Distributed Systems]]></description>
+            <link>https://www.tshiteej.com/blog/common-architectures-in-distributed-systems</link>
+            <guid isPermaLink="true">https://www.tshiteej.com/blog/common-architectures-in-distributed-systems</guid>
+            <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[An Introduction to Microservices.]]></title>
