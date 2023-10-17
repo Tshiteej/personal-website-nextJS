@@ -10,11 +10,12 @@ import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
 // import Connect from "../components/Connect";
 import React, { useState, useEffect } from "react";
+import { getAllFilesFrontMatter } from "../lib/mdx";
 import axios from "axios";
-export default function Index({ menu, experience }) {
+export default function Index({ menu, experience, posts }) {
   const { colorMode } = useColorMode();
   const [domLoaded, setDomLoaded] = useState(true);
-
+console.log({posts})
   useEffect(() => {
     setDomLoaded(true);
   }, []);
@@ -37,7 +38,7 @@ export default function Index({ menu, experience }) {
           <Top />
           <Intro />
           <Experience experience={experience}/>
-          <Blogs />
+          <Blogs posts={posts}/>
           {/* <Projects /> */}
           {/* <Connect /> */}
         </Stack>
@@ -48,7 +49,14 @@ export default function Index({ menu, experience }) {
 }
 
 export async function getServerSideProps() {
+  const posts = await getAllFilesFrontMatter("blog");
   let content = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/configs/content.json`)
   const { menu, experience } = content.data
-  return { props: { menu: menu || [], experience: experience || [] } };
+  return { 
+    props: { 
+      menu: menu || [], 
+      experience: experience || [], 
+      posts: posts.sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate)).slice(0,3) 
+    } 
+  };
 }
