@@ -6,9 +6,9 @@ import Top from "../components/Top";
 import Intro from "../components/Intro";
 import Experience from "../components/Experience";
 import Blogs from "../components/Blogs";
-import Projects from "../components/Projects";
+// import Projects from "../components/Projects";
 import Footer from "../components/Footer";
-import Connect from "../components/Connect";
+// import Connect from "../components/Connect";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 export default function Index({ menu }) {
@@ -38,8 +38,8 @@ export default function Index({ menu }) {
           <Intro />
           <Experience />
           <Blogs />
-          <Projects />
-          <Connect />
+          {/* <Projects /> */}
+          {/* <Connect /> */}
         </Stack>
       </Container>
       <Footer />
@@ -48,9 +48,7 @@ export default function Index({ menu }) {
 }
 
 export async function getServerSideProps() {
-  let content = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/config`)
-  content = JSON.parse(content.data)
-  console.log(content, "CONTENT__")
-  const { menu } = content
+  let content = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/configs/content.json`)
+  const { menu } = content.data
   return { props: { menu: menu || [] } };
 }

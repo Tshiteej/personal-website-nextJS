@@ -9,9 +9,9 @@
             <link>http://localhost:3000</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 17 Oct 2023 05:45:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Oct 2023 15:24:48 GMT</lastBuildDate>
         <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 17 Oct 2023 05:45:58 GMT</pubDate>
+        <pubDate>Tue, 17 Oct 2023 15:24:48 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[What is Serverless Computing?]]></title>

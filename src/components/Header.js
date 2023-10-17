@@ -19,7 +19,6 @@ const color = {
 
 const Header = props => {
   const [show, setShow] = React.useState(false);
-    console.log(props, "PROPS");
   const handleToggle = () => setShow(!show);
 
   const { colorMode, toggleColorMode } = useColorMode();
