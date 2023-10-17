@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 // import Connect from "../components/Connect";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-export default function Index({ menu }) {
+export default function Index({ menu, experience }) {
   const { colorMode } = useColorMode();
   const [domLoaded, setDomLoaded] = useState(true);
 
@@ -36,7 +36,7 @@ export default function Index({ menu }) {
         >
           <Top />
           <Intro />
-          <Experience />
+          <Experience experience={experience}/>
           <Blogs />
           {/* <Projects /> */}
           {/* <Connect /> */}
@@ -49,6 +49,6 @@ export default function Index({ menu }) {
 
 export async function getServerSideProps() {
   let content = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/configs/content.json`)
-  const { menu } = content.data
-  return { props: { menu: menu || [] } };
+  const { menu, experience } = content.data
+  return { props: { menu: menu || [], experience: experience || [] } };
 }

@@ -8,5 +8,44 @@
             "display": "Articles",
             "route": "/blog"
         }
+    ],
+    "experience": [
+        {
+            "company": "Phable",
+            "designations": [
+                {"designation": "Senior Software Engineer", "duration": "July 2022 - February 2023"}
+            ],
+            "link": null,
+            "linkText": null,
+            "image": "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+        },
+        {
+            "company": "ElevateHQ",
+            "designations": [
+                {"designation": "Software Development Engineer 2", "duration": "October 2021 - July 2022"}
+            ],
+            "link": "https://elevate.so/",
+            "linkText": "elevate.so",
+            "image": "https://images.unsplash.com/photo-1559336197-ded8aaa244bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2806&q=80"
+        },
+        {
+            "company": "YellowMessenger",
+            "designations": [
+                {"designation": "Senior Software Engineer", "duration": "January 2021 - October 2021"},
+                {"designation": "Software Engineer", "duration": "June 2019 - January 2021"}
+            ],
+            "link": "https://yellowmessenger.com/",
+            "linkText": "yellow.ai",
+            "image": "https://images.unsplash.com/photo-1559336197-ded8aaa244bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2806&q=80"
+        },
+        {
+            "company": "CDAC - Pune",
+            "designations": [
+                {"designation": "Summer Internship", "duration": "2018"}
+            ],
+            "link": "https://cdac.in/",
+            "linkText": "CDAC",
+            "image": "https://www.sagacent.com/wp-content/uploads/2019/04/server-clustering.jpg"
+        }
     ]
 }
