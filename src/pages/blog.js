@@ -7,7 +7,6 @@ import {
   Stack,
   Input,
   InputGroup,
-  InputRight,
   InputRightElement,
   useColorModeValue,
   Box,
@@ -18,7 +17,7 @@ import BlogPost from "../components/BlogPost";
 import Footer from "../components/Footer";
 
 import { SearchIcon } from "@chakra-ui/icons";
-
+import { generateRssFeed } from '../lib/generateRSSFeed';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
@@ -42,16 +41,12 @@ export default function Blog({ posts }) {
           justifyContent='center'
           alignItems='flex-start'
           m='0 auto 4rem auto'
-          //   maxWidth='700px'
-          //   minWidth='100%'
           maxWidth={750}
         >
           <Flex
             flexDirection='column'
             justifyContent='flex-start'
             alignItems='flex-start'
-            // maxWidth='700px'
-            // minWidth='30vw'
             w='100%'
             px={[4, 0]}
           >
@@ -97,5 +92,6 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog");
+  await generateRssFeed();
   return { props: { posts } };
 }

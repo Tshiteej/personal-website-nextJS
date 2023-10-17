@@ -17,6 +17,7 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "axios": "^1.5.1",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
     "dotenv-webpack": "^8.0.1",

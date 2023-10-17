@@ -19,7 +19,7 @@ const color = {
 
 const Header = props => {
   const [show, setShow] = React.useState(false);
-  //   console.log(show, "SHOW");
+    console.log(props, "PROPS");
   const handleToggle = () => setShow(!show);
 
   const { colorMode, toggleColorMode } = useColorMode();
@@ -75,33 +75,26 @@ const Header = props => {
         mr={4}
         width={{ sm: "full", md: "auto" }}
         alignItems={{ base: "right", sm: "center" }}
-        // flexGrow={1}
         direction={{ sm: "row", md: "column" }}
       >
-        <NextLink href='/' passHref>
-          <Button
-            as='a'
-            variant='ghost'
-            p={[1, 2, 4]}
-            _hover={{ border: "1px", borderColor: color[colorMode] }}
-            color={color[colorMode]}
-          >
-            Home
-          </Button>
-        </NextLink>
-        <NextLink href='/blog' passHref>
-          <Button
-            as='a'
-            variant='ghost'
-            p={[1, 2, 4]}
-            _hover={{ border: "1px", borderColor: color[colorMode] }}
-            color={color[colorMode]}
-          >
-            Articles
-          </Button>
-        </NextLink>
+        {
+          props.menu.map((item) => {
+            return (
+              <NextLink href={item.route} passHref key={item.display}>
+                <Button
+                  as='a'
+                  variant='ghost'
+                  p={[1, 2, 4]}
+                  _hover={{ border: "1px", borderColor: color[colorMode] }}
+                  color={color[colorMode]}
+                >
+                  {item.display}
+                </Button>
+              </NextLink>
+            )
+          })
+        }
       </Box>
-
       <Box
         display={{
           base: show === true ? "block" : "none",

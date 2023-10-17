@@ -2,78 +2,78 @@
     <channel>
         <title><![CDATA[Blog posts | RSS Feed]]></title>
         <description><![CDATA[Welcome to this blog posts!]]></description>
-        <link>https://www.tshiteej.com</link>
+        <link>http://localhost:3000</link>
         <image>
-            <url>https://www.tshiteej.com/logo.png</url>
+            <url>http://localhost:3000/logo.png</url>
             <title>Blog posts | RSS Feed</title>
-            <link>https://www.tshiteej.com</link>
+            <link>http://localhost:3000</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 29 Jul 2023 19:28:52 GMT</lastBuildDate>
-        <atom:link href="https://www.tshiteej.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 29 Jul 2023 19:28:52 GMT</pubDate>
+        <lastBuildDate>Tue, 17 Oct 2023 05:45:58 GMT</lastBuildDate>
+        <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 17 Oct 2023 05:45:58 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[What is Serverless Computing?]]></title>
             <description><![CDATA[Tired of listening about Serverless computing! What it really is?]]></description>
-            <link>https://www.tshiteej.com/blog/what-is-serverless-computing</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/what-is-serverless-computing</guid>
+            <link>http://localhost:3000/blog/what-is-serverless-computing</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/what-is-serverless-computing</guid>
             <pubDate>Sat, 22 Apr 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Top 10 JS Array methods to make your life easier]]></title>
             <description><![CDATA[Here are 10 of the most useful array methods in JavaScript to make your life less stressful.]]></description>
-            <link>https://www.tshiteej.com/blog/top-10-js-array-methods-to-make-your-life-easier</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/top-10-js-array-methods-to-make-your-life-easier</guid>
+            <link>http://localhost:3000/blog/top-10-js-array-methods-to-make-your-life-easier</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/top-10-js-array-methods-to-make-your-life-easier</guid>
             <pubDate>Sun, 25 Apr 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The Lazy Developers Way to Load Balancer]]></title>
             <description><![CDATA[What is a load balancer, and it's types? Let's understand.]]></description>
-            <link>https://www.tshiteej.com/blog/the-lazy-developers-way-to-load-balancer</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/the-lazy-developers-way-to-load-balancer</guid>
+            <link>http://localhost:3000/blog/the-lazy-developers-way-to-load-balancer</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/the-lazy-developers-way-to-load-balancer</guid>
             <pubDate>Fri, 11 Mar 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Test Automation Using Python and Selenium]]></title>
             <description><![CDATA[Try automating your web tests with Python and Selenium]]></description>
-            <link>https://www.tshiteej.com/blog/test-automation-using-python-and-selenium</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/test-automation-using-python-and-selenium</guid>
+            <link>http://localhost:3000/blog/test-automation-using-python-and-selenium</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/test-automation-using-python-and-selenium</guid>
             <pubDate>Sun, 26 Apr 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Proxies and Reverse Proxies]]></title>
             <description><![CDATA[Discover the key differences between proxies and reverse proxies and their impact on web applications]]></description>
-            <link>https://www.tshiteej.com/blog/proxies-and-reverse-proxies</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/proxies-and-reverse-proxies</guid>
+            <link>http://localhost:3000/blog/proxies-and-reverse-proxies</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/proxies-and-reverse-proxies</guid>
             <pubDate>Sun, 29 Jan 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How regex in python isn’t as bad as you think?]]></title>
             <description><![CDATA[Ever thought of solving a problem with regex and ended up with 2 problems. No more!]]></description>
-            <link>https://www.tshiteej.com/blog/how-regex-in-python-isnt-as-bad-as-you-think</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/how-regex-in-python-isnt-as-bad-as-you-think</guid>
+            <link>http://localhost:3000/blog/how-regex-in-python-isnt-as-bad-as-you-think</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/how-regex-in-python-isnt-as-bad-as-you-think</guid>
             <pubDate>Wed, 15 Apr 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[gRPC: Simplifying Communication in Modern Applications]]></title>
             <description><![CDATA[What is gRPC? What are its advantages over REST and SOAP?]]></description>
-            <link>https://www.tshiteej.com/blog/grpc-simplifying-communication-in-modern-applications</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/grpc-simplifying-communication-in-modern-applications</guid>
+            <link>http://localhost:3000/blog/grpc-simplifying-communication-in-modern-applications</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/grpc-simplifying-communication-in-modern-applications</guid>
             <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Common Architectures in Distributed Systems]]></title>
             <description><![CDATA[4 common architectural patterns in Distributed Systems]]></description>
-            <link>https://www.tshiteej.com/blog/common-architectures-in-distributed-systems</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/common-architectures-in-distributed-systems</guid>
+            <link>http://localhost:3000/blog/common-architectures-in-distributed-systems</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/common-architectures-in-distributed-systems</guid>
             <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[An Introduction to Microservices.]]></title>
             <description><![CDATA[What is a microservice? Is it really a solution to all the architectural problems?]]></description>
-            <link>https://www.tshiteej.com/blog/an-introduction-to-microservcies</link>
-            <guid isPermaLink="true">https://www.tshiteej.com/blog/an-introduction-to-microservcies</guid>
+            <link>http://localhost:3000/blog/an-introduction-to-microservcies</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/an-introduction-to-microservcies</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>

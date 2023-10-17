@@ -5,19 +5,23 @@ import Container from "../components/Container";
 import Top from "../components/Top";
 import Intro from "../components/Intro";
 import Experience from "../components/Experience";
-// import Quote from "../components/Quote";
 import Blogs from "../components/Blogs";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Connect from "../components/Connect";
-
-import { generateRssFeed } from '../lib/generateRSSFeed';
-
-export default function Index() {
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+export default function Index({ menu }) {
   const { colorMode } = useColorMode();
+  const [domLoaded, setDomLoaded] = useState(true);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
   return (
-    <>
-      <Container>
+    domLoaded && <>
+      <Container menu={menu}>
         <Head>
           <title>Home | Tshiteej Bhardwaj</title>
         </Head>
@@ -31,7 +35,6 @@ export default function Index() {
           px={2}
         >
           <Top />
-          {/* <Quote /> */}
           <Intro />
           <Experience />
           <Blogs />
@@ -44,7 +47,10 @@ export default function Index() {
   );
 }
 
-export async function getStaticProps() {
-  await generateRssFeed();
-  return { props: {  } };
+export async function getServerSideProps() {
+  let content = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/config`)
+  content = JSON.parse(content.data)
+  console.log(content, "CONTENT__")
+  const { menu } = content
+  return { props: { menu: menu || [] } };
 }

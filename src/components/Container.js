@@ -3,9 +3,9 @@ import { useColorMode, Flex } from "@chakra-ui/react";
 
 import Header from "./Header";
 import SideSocial from "./SideSocial";
-const Container = ({ children }) => {
-  const { colorMode } = useColorMode();
 
+const Container = ({ menu, children }) => {
+  const { colorMode } = useColorMode();
   const color = {
     light: "black",
     dark: "white"
@@ -13,7 +13,7 @@ const Container = ({ children }) => {
 
   return (
     <>
-      <Header />
+      <Header menu={menu || []}/>
       <SideSocial alignItems='flex-end' position='fixed' />
 
       <Flex
