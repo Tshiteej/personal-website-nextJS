@@ -7,7 +7,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.tshiteej.com
+Host: http://localhost:3000
 
 # Sitemaps
-Sitemap: https://www.tshiteej.com/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml

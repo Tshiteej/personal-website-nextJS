@@ -1,0 +1,12 @@
+{
+    "menu": [
+        {
+            "display": "Home",
+            "route": "/"
+        },
+        {
+            "display": "Articles",
+            "route": "/blog"
+        }
+    ]
+}
