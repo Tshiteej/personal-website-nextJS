@@ -122,7 +122,7 @@ const prismBaseTheme = css`
   .remark-code-title {
     padding: ${theme.space[2]} ${theme.space[4]};
     font-family: ${theme.fonts.mono};
-    background: ${theme.colors.gray[100]};
+    background: ${theme.colors.gray[200]};
     color: ${theme.colors.gray[800]};
     border: 1px solid ${theme.colors.gray[200]};
     border-top-left-radius: ${theme.radii.lg};

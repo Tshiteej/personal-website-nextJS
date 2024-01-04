@@ -9,10 +9,10 @@
             <link>http://localhost:3000</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 17 Oct 2023 15:24:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Jan 2024 11:47:06 GMT</lastBuildDate>
         <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 17 Oct 2023 15:24:48 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
+        <pubDate>Thu, 04 Jan 2024 11:47:06 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2024, Ibas]]></copyright>
         <item>
             <title><![CDATA[What is Serverless Computing?]]></title>
             <description><![CDATA[Tired of listening about Serverless computing! What it really is?]]></description>
@@ -61,6 +61,13 @@
             <link>http://localhost:3000/blog/grpc-simplifying-communication-in-modern-applications</link>
             <guid isPermaLink="true">http://localhost:3000/blog/grpc-simplifying-communication-in-modern-applications</guid>
             <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Concurrency and Parallelism Explained]]></title>
+            <description><![CDATA[What is the difference between Concurrency and Parallelism?]]></description>
+            <link>http://localhost:3000/blog/concurrency-and-parallelism</link>
+            <guid isPermaLink="true">http://localhost:3000/blog/concurrency-and-parallelism</guid>
+            <pubDate>Thu, 04 Jan 2024 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Common Architectures in Distributed Systems]]></title>
